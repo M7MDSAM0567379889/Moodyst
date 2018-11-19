@@ -2,7 +2,6 @@ const Discord = require('discord.js');
 const prefix = "!"
 const id = ["317969406300782592","316143612620570634"]
 const client = new Discord.Client();
-var token = process.env.TOKEN
 
 client.on('ready', () => {
   console.log(`Hi ${client.user.tag} , This Code by : Ameer `);
@@ -49,4 +48,4 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {
 
 
 
-client.login(token);
+client.login(process.env.TOKEN);
